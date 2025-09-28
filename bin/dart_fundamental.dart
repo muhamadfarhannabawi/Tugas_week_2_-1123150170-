@@ -38,8 +38,12 @@ case '3':
 print('Hasil: ${a * b}');
 break;
 case '4':
-print('Hasil: ${a / b}');
-break;
+        if (b == 0) {
+          print('Error: Tidak bisa dibagi 0!');
+        } else {
+          print('Hasil: ${a / b}');
+        }
+        break;
 default:
 print('Pilihan tidak dikenal.');
 }
